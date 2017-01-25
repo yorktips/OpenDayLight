@@ -1,0 +1,23 @@
+module whistest {
+    yang-version 1;
+    namespace "urn:opendaylight:params:xml:ns:yang:whistest";
+    prefix "whisprefix";
+
+    revision "2017-01-23" {
+        description "Initial revision of whistest model";
+    }
+
+     rpc hello-whis {
+        input {
+            leaf name {
+                type string;
+            }
+        }
+        output {
+            leaf greeting {
+                type string;
+            }
+        }
+    }
+
+}
